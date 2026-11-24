@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "sound_esp",
+  "version": "${version}",
+  "name": "Sound ESP",
+  "description": "Client-only: marks the source of selected sounds the client plays, through blocks.",
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.soundesp.SoundEspClient"] },
+  "mixins": ["sound_esp.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
